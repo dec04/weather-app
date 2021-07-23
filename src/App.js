@@ -170,6 +170,12 @@ export default function App() {
   useEffect(() => {
     getWeatherInfo();
     getbackgroundImage();
+    document.addEventListener('keydown', function(event) {
+      if (event.code == 'Enter') {
+        getWeatherInfo(searchString);
+        setSearchString("");
+      }
+    });
   }, []);
 
   return (
