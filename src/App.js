@@ -170,7 +170,7 @@ export default function App() {
   useEffect(() => {
     getWeatherInfo();
     getbackgroundImage();
-    document.addEventListener('keydown', function(event) {
+    document.addEventListener('keydown', function(e) {
       if (e.key === 'Enter' || e.keyCode === 13) {
         getWeatherInfo(searchString);
         setSearchString("");
