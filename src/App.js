@@ -171,9 +171,10 @@ export default function App() {
     getWeatherInfo();
     getbackgroundImage();
     document.addEventListener('keydown', function(event) {
-      if (event.code == 'Enter') {
+      if (e.key === 'Enter' || e.keyCode === 13) {
         getWeatherInfo(searchString);
         setSearchString("");
+        console.log(`Enter pressed, search[${searchString}]`)
       }
     });
   }, []);
