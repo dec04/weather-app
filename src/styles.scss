@@ -1,0 +1,207 @@
+$contentWidth: 200px;
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #020d45;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-animation: zoomin 240s linear;
+  animation: zoomin 240s linear;
+  animation-fill-mode: forwards;
+  background-position: center, center;
+  background-size: cover;
+
+  .glass {
+    width: 260px;
+    height: 360px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    // Frosty glass effect
+    backdrop-filter: blur(16px) saturate(100%) contrast(95%) brightness(90%);
+    // Shadow
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      max-width: 128px;
+      max-height: 128px;
+    }
+
+    * {
+      font-family: "Saira";
+      font-weight: thin;
+    }
+
+    h3 {
+      position: relative;
+      font-family: "Saira";
+      font-size: 2rem;
+      font-weight: bold;
+      display: inline-flex;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-family: "Asap";
+      font-size: 3.2rem;
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+
+    h5 {
+      font-family: "Saira";
+      font-weight: thin;
+      font-size: 1.2rem;
+    }
+  }
+
+  .control {
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 24px;
+    // Frosty glass effect
+    backdrop-filter: blur(16px) saturate(100%) contrast(95%) brightness(90%);
+    // Shadow
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    padding: 24px 32px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+    font-family: "Saira";
+    font-weight: bold;
+
+    * {
+      margin: 4px 0;
+      font-family: "Saira";
+      font-weight: thin;
+    }
+
+    input, button {
+      margin: 0px;
+      border: 1px solid rgba(100,100,100, 0.55);
+      padding: 8px;
+      border-radius: 4px;
+      outline: none !important;
+      color: #444;
+    }
+
+    input {
+      width: calc(60% - 8px);
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: 0.5s;
+      font-weight: bold;
+    }
+
+    input:hover {
+      cursor: pointer;
+      border: 1px solid rgba(34, 60, 80, 0.55);
+      -webkit-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55) inset;
+      -moz-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55) inset;
+      box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55) inset;
+    }
+
+    button {
+      cursor: pointer;
+      margin-left: 8px;
+      width: 30%;
+      transition: 0.5s;
+      color: #fff;
+      background-size: 200% auto;
+      background-color: rgba(0,0,0,0.1)
+      // background-image: linear-gradient(to right, #e8f0fc 0%, #bdc5d3  51%, #e8f0fc  100%);
+    }
+
+    button:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+      background-color: rgba(34, 60, 80, 0.55);
+      border: 1px solid rgba(34, 60, 80, 0.55);
+      -webkit-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55);
+      -moz-box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55);
+      box-shadow: 0px 0px 8px 2px rgba(34, 60, 80, 0.55);
+    }
+    
+  }
+
+  .additional__info {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    // Frosty glass effect
+    backdrop-filter: blur(16px) saturate(100%) contrast(95%) brightness(90%);
+    // Shadow
+    -webkit-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    -moz-box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    box-shadow: 0px 0px 10px -2px rgba(34, 60, 80, 1);
+    padding: 12px;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Saira";
+    font-weight: thin;
+    font-size: .8rem;
+    max-width: 240px;
+
+    p {
+      margin: 8px 4px;
+
+      a {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+        font-weight: bolder;
+        font-size: 0.9rem
+      }
+    }
+
+    .like-red {
+      color: #ee2626;
+    }
+
+    .icon {
+      color: #fff;
+    }
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    background-size: 100%;
+  }
+  100% {
+    background-size: 120%;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    background-size: cover;
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+}
