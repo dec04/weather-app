@@ -170,14 +170,15 @@ export default function App() {
   useEffect(() => {
     getWeatherInfo();
     getbackgroundImage();
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Enter' || e.keyCode === 13) {
+  }, []);
+  
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter' || e.keyCode === 13) {
         getWeatherInfo(searchString);
         setSearchString("");
         console.log(`Enter pressed, search[${searchString}]`)
       }
-    });
-  }, []);
+  }
 
   return (
     <div id="wrapper" className="wrapper">
@@ -187,6 +188,7 @@ export default function App() {
           <input
             type="text"
             onChange={changeHandler.bind(this)}
+            onKeyPress={handleKeyPress.bind(this)}
             value={searchString}
           />
           <button
